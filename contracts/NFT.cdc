@@ -45,7 +45,7 @@ pub contract TestNFT {
 
         // self.account.link<&{NFTReceiver}>(/public/NFTReceiver, target: /storage/NFTCollection)
 
-        self.account.save(<-create NFTMinter(), to: NFTMinter)
+        self.account.save(<-create NFTMinter(), to: /storage/NFTMinter)
     }
 
 }
