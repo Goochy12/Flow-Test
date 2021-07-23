@@ -9,6 +9,10 @@ pub contract TestNFT {
             self.id = initID
             self.metadata = {}  //initialise as empty - could test differnet parameters
         }
+
+        pub fun getID(): UInt64{
+            return self.id
+        }
     }
 
     pub resource interface NFTReceiver{
