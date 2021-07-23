@@ -67,7 +67,7 @@ pub contract FullNFT {
         }
 
         pub fun mintNFT(): @NFT {
-            var newNFT <- create NFT(initID: self.idCount)
+            var newNFT <- create NFT(initID: self.idCount, initMetadata: {"TestKey": "TestValue"})
 
             self.idCount = self.idCount + 1 as UInt64
 
